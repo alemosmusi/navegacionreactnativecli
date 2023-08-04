@@ -1,14 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Button, Text, View } from 'react-native'
-import { useNavigation } from '@react-navigation/native'
 import { styles } from '../theme/appTheme'
+import { useNavigation } from '@react-navigation/native'
 
 const Pagina2Screen = () => {
-
-
+  
+  
   const navigator = useNavigation()
-
-
 
 
 
