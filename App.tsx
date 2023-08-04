@@ -4,7 +4,7 @@ import { Text, View } from 'react-native'
 const App = () => {
   return (
     <View>
-      <Text>Paginacion</Text>
+      <Text>Paginacion a</Text>
     </View>
   )
 }
