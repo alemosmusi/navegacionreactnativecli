@@ -6,14 +6,23 @@ import { useNavigation } from '@react-navigation/native'
 const Pagina2Screen = () => {
   
   
-  const navigator = useNavigation()
+  const navigator = useNavigation<any>()
+
+
+  useEffect(() => {
+    navigator.setOptions({
+      title: 'hola mundo',
+      headerBackTitle: ''
+    })
+  }, [])
+  
 
 
 
 
   return (
     <View style={styles.globalMargin}>
-        <Text> Pagina2screen</Text>
+        <Text style={styles.title}> Pagina2screen</Text>
 
         <Button 
           title='Ir pagina 3'

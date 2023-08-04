@@ -20,7 +20,7 @@ const Pagina1Screen = ({navigation}: Props) => {
     <View style={styles.globalMargin}>
 
 
-        <Text> Pagina1screen</Text>
+        <Text style={styles.title}> Pagina1screen</Text>
 
 
         <Button
