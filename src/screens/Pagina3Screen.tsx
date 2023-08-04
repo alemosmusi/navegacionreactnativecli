@@ -1,10 +1,24 @@
+import { StackScreenProps } from '@react-navigation/stack'
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Button, Text, View } from 'react-native'
+import { styles } from '../theme/appTheme'
 
-const Pagina3Screen = () => {
+interface Props extends StackScreenProps<any, any>{}
+
+const Pagina3Screen = ({navigation}: Props) => {
   return (
-    <View>
+    <View style={styles.globalMargin}>
         <Text> Pagina3screen</Text>
+
+
+        <Button 
+          title='regresar'
+          onPress={()=>navigation.pop()}        
+        />
+        <Button 
+          title='ir al pagina 1'
+          onPress={()=>navigation.popToTop()}        
+        />
     </View>
   )
 }
