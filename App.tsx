@@ -1,11 +1,12 @@
 import React from 'react'
 import { Text, View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
   return (
-    <View>
+    <NavigationContainer>
       <Text>Paginacion a</Text>
-    </View>
+    </NavigationContainer>
   )
 }
 
